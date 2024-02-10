@@ -62,7 +62,10 @@ public class EtudiantServiceImpl implements IEtudiantService{
 		Equipe eq=equipeRepository.findById(idEquipe).orElse(null);
 		c.setEtudiant(e);
 		eq.getEtudiants().add(e);
-return e;
+		equipeRepository.save(eq);
+		contratRepository.save(c);
+		etudiantRepository.save(e);
+		return e;
 	}
 
 	public 	List<Etudiant> getEtudiantsByDepartement (Integer idDepartement){
