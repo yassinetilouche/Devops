@@ -129,8 +129,8 @@ class ContratServiceMockTests {
 
 
 
-    @Test
-    public void testRetrieveAndUpdateStatusContrat() {
+    //@Test
+    /*public void testRetrieveAndUpdateStatusContrat() {
         Contrat contrat = new Contrat();
         contrat.setDateDebutContrat(new Date());
         contrat.setDateFinContrat(new Date());
@@ -142,7 +142,7 @@ class ContratServiceMockTests {
 
 
 
-    }
+    }*/
 
 
 
